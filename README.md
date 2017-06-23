@@ -16,5 +16,3 @@ Upload `installer_wordpress` the file in `/usr/local/cwpsrv/htdocs/resources/cli
 You can access the module from `Other` Menu in CWP Menu
 
 I am open to suggestion, feel free to pull request if you think you can improve my code.
-
-Thanks.
