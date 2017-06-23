@@ -1,4 +1,4 @@
-# cwp-wp-installer
+# Worpdress Installer, Custom Module for Centos Web Panel
 Centos Web Panel Custom Module For Installing Wordpress
 
 ##How to install 
