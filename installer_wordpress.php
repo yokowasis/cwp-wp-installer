@@ -203,6 +203,7 @@
 				shell_exec('rm -rf '.$_GET['foldername'].'wp-signup.php');
 				shell_exec('rm -rf '.$_GET['foldername'].'wp-trackback.php');
 				shell_exec('rm -rf '.$_GET['foldername'].'xmlrpc.php');
+				shell_exec('rm -rf '.$_GET['foldername'].'.htaccess');
 
 				if (is_dir_empty($_GET['foldername'])) {
 					shell_exec('rm -rf '.$_GET['foldername']);
