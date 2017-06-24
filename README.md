@@ -11,7 +11,7 @@ add this line
     <li><a href="index.php?module=installer_wordpress"><span class="icon16 icomoon-icon-arrow-right-3"></span>Wordpress Installer</a></li>
 
 Download `installer_wordpress.php`
-Upload `installer_wordpress` the file in `/usr/local/cwpsrv/htdocs/resources/client/modules`
+Upload `installer_wordpress.php` in `/usr/local/cwpsrv/htdocs/resources/client/modules/`
 
 You can access the module from `Other` Menu in CWP Menu
 
