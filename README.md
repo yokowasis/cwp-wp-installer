@@ -1,7 +1,7 @@
 # Worpdress Installer, CWP Module
 Centos Web Panel Custom Module For Installing Wordpress
 
-##How to install 
+## How to install 
 Edit this file (if the file doesn't exist, create it)
 
     /usr/local/cwpsrv/htdocs/resources/client/include/3rdparty.php
