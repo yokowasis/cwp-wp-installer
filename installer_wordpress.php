@@ -11,7 +11,7 @@
 	}
 
 	shell_exec ('mysql -Bse "CREATE DATABASE IF NOT EXISTS cwp_installer;"');
-	shell_exec ('mysql -Bse "CREATE TABLE IF NOT EXISTS cwp_installer.list (  id int(11) NOT NULL AUTO_INCREMENT,  username varchar(50) NOT NULL,  dbname varchar(50) NOT NULL,  foldername varchar(255) NOT NULL,  PRIMARY KEY (id)) ENGINE=InnoDB DEFAULT CHARSET=latin1;"');
+	shell_exec ('mysql -Bse "CREATE TABLE IF NOT EXISTS cwp_installer.list (  id int(11) NOT NULL AUTO_INCREMENT,  username varchar(50) NOT NULL,  password varchar(50) NOT NULL, dbname varchar(50) NOT NULL,  foldername varchar(255) NOT NULL,  PRIMARY KEY (id)) ENGINE=InnoDB DEFAULT CHARSET=latin1;"');
 	if (isset($_POST['submit'])) {
 		$user = $user_login;
 		$name = substr(uniqid(mt_rand(), true), 0,7);
@@ -146,8 +146,8 @@
 			$stmt->bind_param("isss", $_GET['id'],$_GET['dbname'],$_GET['password'],$_GET['foldername']);
 			$stmt->execute();
 			$meta = $stmt->result_metadata(); 
-			unset ($result);
-			unset ($params);
+			$result = null;
+			$params = null;
 			while ($field = $meta->fetch_field()) 
 			{ 
 			    $params[] = &$row[$field->name]; 
@@ -223,8 +223,8 @@
 		$stmt->bind_param("s", $user_login);
 		$stmt->execute();
 		$meta = $stmt->result_metadata(); 
-		unset ($result);
-		unset ($params);
+		$result = null;
+		$params = null;
 		while ($field = $meta->fetch_field()) 
 		{ 
 		    $params[] = &$row[$field->name]; 
