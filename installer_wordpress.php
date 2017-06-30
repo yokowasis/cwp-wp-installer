@@ -277,3 +277,4 @@
 		.pma_submit { background: none; border: none; margin:0; padding : 0;}
 		.pma_form { display: inline; }
 	</style>
+
